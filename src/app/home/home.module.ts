@@ -5,15 +5,19 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { SwipeDirective } from '../swipe/swipe.directive';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, UserDetailsComponent, SwipeDirective],
+  exports: [
+    SwipeDirective
+  ],
 })
-export class HomePageModule {}
+export class HomePageModule { }

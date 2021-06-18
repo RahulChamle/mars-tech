@@ -1,5 +1,7 @@
 {
   "name": "mars-techs",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
